@@ -30,3 +30,36 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+# --- Build artifacts & project bins ---
+/bin/
+/build/
+/dist/
+/out/
+/release/
+/tmp/
+/cache/
+
+# --- Logs ---
+*.log
+
+# --- Profiling & benchmarks ---
+*.pprof
+*.prof
+profile.*
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Ebiten/WebAssembly (если будете собирать web) ---
+*.wasm
+/web/wasm_exec.js
+/web/dist/
+/web/.parcel-cache
+
+# --- Frontend tooling (на случай фронт-обвязки) ---
+/node_modules/
+
+# --- Assets: игнорировать только генерируемое ---
+/assets/_generated/
+/assets/**/tmp/
